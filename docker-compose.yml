@@ -5,6 +5,8 @@ services:
     image: postgres:13.13
     restart: always
     environment:
-      POSTGRES_PASSWORD: example
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: manga
     ports:
       - "5432:5432"
